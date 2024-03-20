@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  rwp:
+    image: ${DOCKER_REGISTRY-}rwp
+    build:
+      context: .
+      dockerfile: RWP/Dockerfile
